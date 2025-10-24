@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Gatinho</title>
+</head>
+<body>
+    <h1>Adote um Gatinho</h1>
+    <p>Encontre o seu amor de quatro patas e mude uma vida para sempre.</p>
+<picture>
+        <source srcset="imagens/adocao_grande.webp 1000px, imagens/adocao_medio.webp 600px, imagens/adocao_pequeno.webp 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/webp">
+        <source srcset="imagens/adocao_grande.jpg 1000px, imagens/adocao_medio.jpg 600px, imagens/adocao_pequeno.jpg 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/jpeg">
+        <img src="imagens/adocao_grande.jpg" alt=""
+        loading="lazy"
+        width="1200"
+        height="800"
+        style="max-width: 60%; height: auto;">
+    </picture>
+    <h2>Nosso Guia Rápido Para Adoção Responsável</h2>
+    <ol>
+        <li>Preencha o Formulário de Adoção;</li>
+        <li>Visite o Abrigo para Conhecer o Gato;</li>
+        <li>Prepare Sua Casa para o Novo Membro da Família;</li>
+        <li>Assine o Termo de Adoção.</li>
+    </ol>
+    <h2>Informações Importantes</h2>
+    <p><b>Você deve ser maior de 18 anos</b>, apresentar RG e comprovante de residência, taxa de adoção (se houver), obrigatoriedade de tela nas janelas, etc.</p>
+    <h1>Faça o Formulário Abaixo</h1>
+
+    <form>
+        <fieldset>
+            <legend>Seus Dados de Contato</legend><br>
+
+            <label for="nome_adocao">Nome Completo:</label>
+            <input type="text" id="nome_adocao" placeholder="Seu Nome Completo" required>
+            
+            <label for="email_adocao">E-mail:</label>
+            <input type="email" id="email_adocao" placeholder="Coloque seu E-mail"><br>
+
+            <label for="telefone_adocao">Telefone/Whatsapp:</label>
+            <input type="tel" id="telefone_adocao" placeholder="(xx)9xxxx-xxxx" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+
+            <label for="cidade_adocao">Cidade e Estado</label>
+            <input type="text" id="cidade_adocao" placeholder="Sua Cidade e Estado" required>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Seu Lar e o Gato Ideal</legend><br>
+            <div>
+                <label for="tipo_moradia">Tipo de Moradia:</label>
+                <select id="tipo_moradia">
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+
+                <label for="outro_pet">Você tem outros pets?</label>
+                <input type="radio" id="outro_pet_sim" name="outro_pet" value="sim">
+                <label for="outro_pet_sim">Sim</label>
+                <input type="radio" id="outro_pet_nao" name="outro_pet" value="nao">
+                <label for="outro_pet_nao">Não</label><br>
+
+                <label for="tipo_gato">Tipo de Gato que Deseja Adotar:</label>
+                <select id="tipo_gato">
+                    <option value="filhote">Filhote</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="idoso">Idoso</option>
+                    <option value="sem_preferencia">Sem Preferência</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Compromisso</legend>
+            <p>Ao enviar este formulário, você concorda em fornecer um lar amoroso e responsável para o gato adotado, cumprindo todas as obrigações legais e éticas associadas à adoção.</p>
+            <label for="compromisso"></label>
+            <input type="radio" name="compromisso" id="compromisso_sim" required>
+            <label for="compromisso_sim">Eu concordo com os termos acima. Quero fazer uma visita a instituição.</label>
+        </fieldset>
+    </form><br>
+
+    <input type="submit" value="Enviar Formulário de Adoção">
+
+    <h3><a href="pagina-principal.html">Página Inicial</a></h3>
+    &copy; 2025 Abrigo Miau
+</body>
+</html>
