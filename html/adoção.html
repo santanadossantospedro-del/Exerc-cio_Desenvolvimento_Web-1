@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote um Gatinho</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Adote um Gatinho</h1>
-    <p>Encontre o seu amor de quatro patas e mude uma vida para sempre.</p>
-<picture>
-        <source srcset="imagens/adocao_grande.webp 1000px, imagens/adocao_medio.webp 600px, imagens/adocao_pequeno.webp 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/webp">
-        <source srcset="imagens/adocao_grande.jpg 1000px, imagens/adocao_medio.jpg 600px, imagens/adocao_pequeno.jpg 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/jpeg">
-        <img src="imagens/adocao_grande.jpg" alt=""
-        loading="lazy"
-        width="1200"
-        height="800"
-        style="max-width: 60%; height: auto;">
-    </picture>
-    <h2>Nosso Guia Rápido Para Adoção Responsável</h2>
-    <ol>
-        <li>Preencha o Formulário de Adoção;</li>
-        <li>Visite o Abrigo para Conhecer o Gato;</li>
-        <li>Prepare Sua Casa para o Novo Membro da Família;</li>
-        <li>Assine o Termo de Adoção.</li>
-    </ol>
-    <h2>Informações Importantes</h2>
-    <p><b>Você deve ser maior de 18 anos</b>, apresentar RG e comprovante de residência, taxa de adoção (se houver), obrigatoriedade de tela nas janelas, etc.</p>
+    <header>
+        <h1>Adote um Gatinho</h1>
+        <p>Encontre o seu amor de quatro patas e mude uma vida para sempre.</p>
+    </header>
+<main>
+    <picture>
+            <source srcset="imagens/adocao_grande.webp 1000px, imagens/adocao_medio.webp 600px, imagens/adocao_pequeno.webp 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/webp">
+            <source srcset="imagens/adocao_grande.jpg 1000px, imagens/adocao_medio.jpg 600px, imagens/adocao_pequeno.jpg 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/jpeg">
+            <img src="imagens/adocao_grande.jpg" alt=""
+            loading="lazy"
+            width="1200"
+            height="800"
+            style="max-width: 60%; height: auto;">
+        </picture>
+        <h2>Nosso Guia Rápido Para Adoção Responsável</h2>
+        <ol>
+            <li>Preencha o Formulário de Adoção;</li>
+            <li>Visite o Abrigo para Conhecer o Gato;</li>
+            <li>Prepare Sua Casa para o Novo Membro da Família;</li>
+            <li>Assine o Termo de Adoção.</li>
+        </ol>
+        <h2>Informações Importantes</h2>
+        <p><b>Você deve ser maior de 18 anos</b>, apresentar RG e comprovante de residência, taxa de adoção (se houver), obrigatoriedade de tela nas janelas, etc.</p>
+</main>
     <h1>Faça o Formulário Abaixo</h1>
 
     <form>
         <fieldset>
-            <legend>Seus Dados de Contato</legend><br>
+            <legend>Seus Dados de Contato</legend>
 
             <label for="nome_adocao">Nome Completo:</label>
             <input type="text" id="nome_adocao" placeholder="Seu Nome Completo" required>
@@ -48,7 +56,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>Seu Lar e o Gato Ideal</legend><br>
+            <legend>Seu Lar e o Gato Ideal</legend>
             <div>
                 <label for="tipo_moradia">Tipo de Moradia:</label>
                 <select id="tipo_moradia">
@@ -61,7 +69,7 @@
                 <input type="radio" id="outro_pet_sim" name="outro_pet" value="sim">
                 <label for="outro_pet_sim">Sim</label>
                 <input type="radio" id="outro_pet_nao" name="outro_pet" value="nao">
-                <label for="outro_pet_nao">Não</label><br>
+                <label for="outro_pet_nao">Não</label>
 
                 <label for="tipo_gato">Tipo de Gato que Deseja Adotar:</label>
                 <select id="tipo_gato">

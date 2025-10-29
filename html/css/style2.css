@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: #F27141;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main{
+    text-align: center;
+    background-color: #BFA995;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.466);
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h4{
+    color: #4B0082;
+}
+
+h1{
+    color: #1A3E5C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    padding: 0;
+    background-color: #E0E0E0;
+    margin: 0;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.301);
+}
+
+h2{
+    color: #1A3E5C;
+    font-size: 2.0em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3{
+    color: #F27141;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+main p{
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+p{
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+picture{
+    display: block;
+    margin: 30px auto;
+}
+
+picture img{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    margin: 0 auto;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.37);
+    max-width: none;
+    border-radius: 10px;
+}
+
+ul{
+   list-style: none;
+   padding: 0;
+   max-width: 700px; 
+   margin: 0 auto 30px;
+   text-align: left;
+}
+
+ul li{
+    background-color: #e8e8e8;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+}
+
+a{
+    color: #4B0082;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #F27141;
+    text-decoration: underline;
+}
+
+aside{
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.438);
+    text-align: center;
+}
+
+aside h3{
+    color: #1A3E5C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+aside p{
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+aside a{
+    color: #4B0082;
+    font-weight: 500;
+}
+
+main h3 a, main p a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #F27141;
+    border-radius: 25px;
+    color: #F27141;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+main h3 a:hover, main p a:hover{
+    background-color: #F27141;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.404);
+}
+
+main h3, main p:has(a){
+    text-align: center !important;
+}
+
+main h3:has(a){
+    text-align: center;
+}
+
+body > h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer{
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+footer h3 a{
+    color: #e8e8e8;
+}
+
+footer h3 a:hover{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
