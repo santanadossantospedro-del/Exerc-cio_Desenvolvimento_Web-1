@@ -16,6 +16,83 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.432);
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    top: 0;
+    padding: 2px 5px;
+    right: 0;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+.menu ul {
+
+        max-height: 0; 
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+        flex-direction: column;
+        background-color: #1A3E5C;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+.menu ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+.menu.active ul {
+        max-height: 300px;
+        opacity: 1; 
+    }    
+
+main, aside {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+main picture img {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+main p {
+        max-width: 100%;
+        text-align: left;
+}
+
+header {
+        width: 100%;
+        position: relative;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    header h1{
+        display: none;
+    }
+}
+
 header h1, main h1, main h2, main p{
     text-align: center;
 }
@@ -31,6 +108,7 @@ header h1{
     font-size: 2.2em;
     margin-bottom: 15px;
 }
+
 .menu ul{
     display: flex;
     justify-content: center;
@@ -39,6 +117,7 @@ header h1{
     list-style: none;
     width: 100%;
 }
+
 .menu ul li{
     display: inline-block;
 }
@@ -47,7 +126,7 @@ header h1{
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 4px;
-    transition: background-color 1s;
+    transition: background-color 0.3s;
 }
 .menu ul li a:hover{
     background-color: #F27141;
