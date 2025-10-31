@@ -1,5 +1,73 @@
 @charset "UTF-8";
 
+.dark-mode{
+
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.dark-mode header, .dark-mode .principal {
+    background-color: #111111;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode main, .dark-mode aside {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.dark-mode main h2{
+    color: #F27141;
+}
+
+.dark-mode main h4{
+    color: #F27141;
+}
+
+.dark-mode main ul li{
+    background-color: #BFA995;
+    color: #245b85;
+}
+
+.dark-mode main ul li a {
+    background-color: #000000;
+    color: #F27141;
+    border-color: #FFFFFF;
+}
+
+.dark-mode aside h3{
+    color: #F27141;
+}
+
+.dark-mode aside a{
+    background-color: #e8e8e8;
+}
+
+.dark-mode aside a:hover{
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.623);
+}
+
+.theme-toggle {
+    background: none;
+    border: 2px solid #F27141;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 101;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #333;
+    color: #1A3E5C; 
+    border: 2px solid #0e2333;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.363);
+}
 
 body{
     background-color: #F27141;
@@ -31,11 +99,11 @@ h4{
 }
 
 h1{
-    color: #1A3E5C;
+    color: #e8e8e8;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
     padding: 0;
-    background-color: #E0E0E0;
+    background-color:#1A3E5C;
     margin: 0;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.301);
 }

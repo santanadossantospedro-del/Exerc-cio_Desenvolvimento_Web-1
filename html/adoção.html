@@ -12,13 +12,17 @@
 <body>
     <header>
         <h1>Adote um Gatinho</h1>
+    
         <p>Encontre o seu amor de quatro patas e mude uma vida para sempre.</p>
+
+        <button id="dark-mode-toggle" aria-label="Alternar para Modo Escuro" class="theme-toggle">
+        ☀️
     </header>
 <main>
     <picture>
             <source srcset="imagens/adocao_grande.webp 1000px, imagens/adocao_medio.webp 600px, imagens/adocao_pequeno.webp 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/webp">
             <source srcset="imagens/adocao_grande.jpg 1000px, imagens/adocao_medio.jpg 600px, imagens/adocao_pequeno.jpg 300px" sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" type="image/jpeg">
-            <img src="imagens/adocao_grande.jpg" alt=""
+            <img src="imagens/adocao_grande.jpg" alt="Um senhor de idade fazendo carinho em um gato cinza que está deitado em uma janela verde."
             loading="lazy"
             width="1200"
             height="800"
@@ -34,7 +38,7 @@
         <h2>Informações Importantes</h2>
         <p><b>Você deve ser maior de 18 anos</b>, apresentar RG e comprovante de residência, taxa de adoção (se houver), obrigatoriedade de tela nas janelas, etc.</p>
 </main>
-    <h1>Faça o Formulário Abaixo</h1>
+    <h1 id="titulo2">Faça o Formulário Abaixo</h1>
 
     <form>
         <fieldset>
@@ -94,5 +98,7 @@
 
     <h3><a href="pagina-principal.html">Página Inicial</a></h3>
     &copy; 2025 Abrigo Miau
+
+    <script src="globaldark.js"></script>
 </body>
 </html>

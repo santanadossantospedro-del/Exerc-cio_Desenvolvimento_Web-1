@@ -1,5 +1,66 @@
 @charset "UTF-8";
 
+.dark-mode{
+
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.dark-mode header, .dark-mode .principal {
+    background-color: #111111;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode main{
+    background-color: #111111;
+}
+
+.dark-mode main p{
+    background-color: #111111;
+    border: 5px solid #F27141;
+}
+
+.dark-mode main, .dark-mode aside {
+    background-color: #333333;
+    color: #FFFFFF;
+    box-shadow: 4px 12px rgba(255, 255, 255, 0.15);
+    border-color: #F27141;
+}
+
+.dark-mode main h1, .dark-mode main h2, .dark-mode aside h3 {
+    color: #F27141;
+}
+
+.dark-mode main ul li a {
+    background-color: #000000;
+    color: #F27141;
+    border-color: #FFFFFF;
+}
+
+.dark-mode h1#titulo2{
+    color: #F27141;
+}
+
+.theme-toggle {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 101;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: white;
+    color: #1A3E5C; 
+}
+
 body {
 
     background-color: whitesmoke; 

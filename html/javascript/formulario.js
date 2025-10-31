@@ -83,5 +83,4 @@ formulario.addEventListener('submit', function(evento){
     evento.preventDefault(); 
     alert('Cadastro feito com sucesso! Seja bem-vindo ao Esquadrão Miau!');
     formulario.reset(); 
-    
 });
